@@ -5,8 +5,11 @@
   ui = auto
   diff = auto
   interactive = auto
-  status = auto
   branch = auto
+[color "status"]
+  added = yellow
+  changed = green
+  untracked = cyan
 [alias]
   co = checkout
   st = status
