@@ -15,11 +15,17 @@
 #
 '.source.js':
   'Console debug log':
-    'prefix': 'p'
-    'body': 'console.log("[DEBUG] " + $1);'
+    'prefix': 'l'
+    'body': 'console.log("[DEBUG] $1" + $2);'
   'Console log':
     'prefix': 'c'
     'body': 'console.log("$1");'
   'Function':
     'prefix': 'f'
     'body': 'function($1) { $2 }'
+
+
+'.source.ruby':
+  'Console debug puts':
+    'prefix': 'puts'
+    'body': 'puts "[DEBUG] $1: #{$2.inspect}"'
